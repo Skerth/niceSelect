@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery NiceSelect</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="jquery.niceSelect.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="jquery.niceSelect.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<form action="/">
+    <div>
+        <label for="town">По отрослям</label>
+        <select name="town" id="town" class="field-select" multiple>
+            <option value="1" selected>Металлургия</option>
+            <option value="2">Машиностроение/Турбомашиностроение</option>
+            <option value="3">Авиация и космос</option>
+            <option value="4" selected>Автомобилестроение</option>
+            <option value="5">Судостроение</option>
+            <option value="6">Наука и образование</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="street">Улицы</label>
+        <select name="street" id="street" class="field-select" multiple>
+            <option value="1">Ленина</option>
+            <option value="2" selected>Северная</option>
+            <option value="3">Тверская</option>
+            <option value="4">Ямская</option>
+        </select>
+    </div>
+</form>
+</body>
+</html>
