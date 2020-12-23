@@ -13,9 +13,16 @@
       }, options);
 
       return this.each(function() {
-        const $select = $(this),
-          $label = $('label[for="' + this.id + '"]'),
-          $options = $select.children('option');
+        const $select = $(this);
+
+        if ($select.hasClass('niceselect--select')) {
+          return;
+        }
+
+        $select.addClass('niceselect--select');
+
+        const $label = $('label[for="' + this.id + '"]'),
+              $options = $select.children('option');
 
         const $niceselect = $('<div>', {
           class: 'niceselect',
